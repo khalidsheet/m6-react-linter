@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "lint": "eslint --fix .",
+    "lint": "eslint .",
     "format": "prettier --write ."
   },
   "eslintConfig": {
