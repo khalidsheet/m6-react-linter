@@ -13,7 +13,7 @@ export const Counter = ({ initialCount = 0 }) => {
     <div className="App">
       <div data-testid="counter">{counter}</div>
       <button data-testid="increase" onClick={increaseCounter}>
-        Increase Counter
+        Increase
       </button>
     </div>
   );
