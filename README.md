@@ -1,10 +1,12 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [TITLE GOES HERE]
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm i` or `npm install`
+
+To install all the dependencies to run the project
 
 ### `npm start`
 
@@ -39,32 +41,23 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Deployment will happen automatically thanks to **Vercel** whenever you push to or merge a PR into main branch
 
-### `npm run build` fails to minify
+## Tools used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+These are the tools used to make our life easier
+
+- **Husky**: To run scripts before and after a commit, used to lint and format the project before a commit
+- **Prettier**: format files code to meet our project requirements and settings.
+- **Eslint**: Help shipping a clean code with no unused variables and so on...
+- **Testing Library**: Tests the application :-)
+
+## Hooks for Husky
+
+- pre-commit: This will run before each commit to make sure everything is correct. It will run eslint which it will run prettier also.
+
+## Github Workflows
+
+Until now we have only one action which set to run on every push or merge to the main branch, it will test the application before mereging to the main branch.
