@@ -1,11 +1,11 @@
 name: CI
 
 on:
-  pull_request:
+  push:
     branches: [main]
 
 jobs:
-  test_pull_request:
+  run_storybook:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
